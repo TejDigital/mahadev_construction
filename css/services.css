@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.services_home {
+    color: #ffffff;
+    background-image: url(../images/home_bg_1.jpg);
+    min-height: 500px;
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 125px;
+}
+.services_home::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #100e37;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+
+}
+.services_home .banner-con {
+    padding-top: 3rem;
+    position: relative;
+    z-index: 1;
+}
+.services_home .banner-con h1 {
+    font-size: 2.4rem;
+}
+.services_home .banner-con p{
+    font-size: 1.1rem;
+}
+.services_home .banner-con p a{
+    text-decoration: none;
+    color: white;
+}
+.services_home .banner-con p span{
+    color: #f9c108 ;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+/* -------------------------------services_start------------ */
+.services_start {
+    position: relative;
+}
+.services_start .text-justify{
+    text-align: justify;
+}
+.services_start .img{
+    width: auto;
+    height: 100%;
+    padding: 2REM;
+}
+.services_start .text{
+    padding: 2REM 0;
+}
+.services_start .img img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 4px 10px #000;
+    border-radius: 5px;
+}

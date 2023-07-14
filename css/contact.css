@@ -1,0 +1,255 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact_home {
+    color: #ffffff;
+    background-image: url(../images/home_bg_1.jpg);
+    min-height: 500px;
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 125px;
+}
+.contact_home::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #100e37;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+
+}
+.contact_home .banner-con {
+    padding-top: 3rem;
+    position: relative;
+    z-index: 1;
+}
+.contact_home .banner-con h1 {
+    font-size: 2.4rem;
+}
+.contact_home .banner-con p{
+    font-size: 1.1rem;
+}
+.contact_home .banner-con p a{
+    text-decoration: none;
+    color: white;
+}
+.contact_home .banner-con p span{
+    color: #f9c108 ;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+/* --------------------------Contact_contact---------------- */
+.contact_contact {
+    position: relative;
+    padding: 1rem 0;
+}
+
+.contact_contact .text h1 {
+    position: relative;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.contact_contact .text h1 span {
+    position: relative;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #f9c108;
+}
+
+.contact_contact .text p {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.contact_contact .img {
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+
+.contact_contact .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact_contact .input_group {
+    position: relative;
+    margin-bottom: 2rem;
+
+}
+
+.contact_contact .input_group input {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: rgb(238, 238, 238);
+    width: 100%;
+    padding: 8px 0 5px 5px;
+    font-size: 1.5rem;
+    position: relative;
+    /* z-index: 99; */
+}
+
+.contact_contact .input_group textarea {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: rgb(238, 238, 238);
+    width: 100%;
+    padding: 8px 0 5px 5px;
+    font-size: 1.5rem;
+    position: relative;
+    /* z-index: 99; */
+}
+
+.contact_contact .input_group label {
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact_contact .input_group input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #100e37;
+}
+
+.contact_contact .input_group textarea:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #100e37;
+}
+
+.contact_contact .input_group input:focus~label,
+.contact_contact .input_group input:valid~label {
+    position: absolute;
+    left: 0;
+    top: -25px;
+    font-size: 1.2rem;
+    font-weight: 300;
+
+}
+
+.contact_contact .input_group textarea:focus~label,
+.contact_contact .input_group textarea:valid~label {
+    position: absolute;
+    left: 0;
+    top: -25px;
+    font-size: 1.2rem;
+    font-weight: 300;
+
+}
+
+.contact_contact .input_group button {
+    position: relative;
+    background: transparent;
+    color: #f9c108;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    transition: 0.2s;
+}
+
+.contact_contact .input_group button:hover {
+    letter-spacing: 0.2rem;
+    padding: 1.1rem 3.1rem;
+    background: var(--clr);
+    color: var(--clr);
+    /* box-shadow: 0 0 35px var(--clr); */
+    animation: box 4s infinite;
+}
+
+.contact_contact .input_group button::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #100e37;
+}
+
+.contact_contact .input_group button span {
+    position: relative;
+    z-index: 1;
+}
+
+.contact_contact .input_group button i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.contact_contact  .input_group button i::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 80%;
+    top: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.3s;
+}
+
+.contact_contact .input_group button:hover i::before {
+    width: 15px;
+    left: 20%;
+    animation: contact_move_btn 3s infinite;
+}
+
+.contact_contact .input_group button i::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 20%;
+    bottom: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.3s;
+}
+
+.contact_contact  .input_group button:hover i::after {
+    width: 15px;
+    left: 80%;
+    animation: contact_move_btn 4s infinite;
+}
+
+@keyframes contact_move_btn {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes contact_box {
+    0% {
+        box-shadow: #27272c;
+    }
+
+    50% {
+        box-shadow: 0 0 25px var(--clr);
+    }
+
+    100% {
+        box-shadow: #27272c;
+    }
+}

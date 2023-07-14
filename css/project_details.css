@@ -1,0 +1,31 @@
+/* -----------------------project_details----------------- */
+.project_details{
+    position: relative;
+}
+.project_details .img{
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: relative;
+}
+.project_details .img img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+/* ----------------------contact_slide_panel_-------- */
+.project_details .contact_slide_panel{
+    position: relative;
+    margin-top:3rem;
+}
+.project_details .contact_slide_panel form{
+    padding: 1rem ;
+    background-color: rgb(255, 253, 253);
+    border-radius: 5px;
+    color: black;
+    border: 2px solid #000;
+}

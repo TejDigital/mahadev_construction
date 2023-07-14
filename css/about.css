@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content-banner {
+    color: #ffffff;
+    background-image: url(../images/home_bg_1.jpg);
+    min-height: 500px;
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 125px;
+}
+.content-banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #100e37;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+
+}
+.content-banner .banner-con {
+    padding-top: 3rem;
+    position: relative;
+    z-index: 1;
+}
+.content-banner .banner-con h1 {
+    font-size: 2.4rem;
+}
+.content-banner .banner-con p{
+    font-size: 1.1rem;
+}
+.content-banner .banner-con p a{
+    text-decoration: none;
+    color: white;
+}
+.content-banner .banner-con p span{
+    color: #f9c108 ;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+/* ----------------------------------------about_about-------------- */
+.about_about{
+    position: relative;
+}
+.about_about .img{
+    position: relative;
+    width: auto;
+    height: 100%;
+    padding: 2rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_about .img::before{
+    position: absolute;
+    top: rem;
+    left: 0;
+    width: 30%;
+    content: '';
+    height: 100%;
+    background-color: #f9c108;
+}
+.about_about .img::after{
+    position: absolute;
+    top: rem;
+    right: 0;
+    width: 30%;
+    content: '';
+    height: 100%;
+    background-color: #f9c108;
+    z-index: -1;
+    
+}
+.about_about .img img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.about_about .col-md-6 .heading span{
+    color: #100e37;
+    background-color: #fff200;
+    padding: 0.7rem;
+    border-radius: 10%;
+}
+.about_about .text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.about_about .text h4{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+.about_about .text .about_points b{
+    color: #100e37;
+    font-size: 0.9;
+}
+
+/* -------------------------------our_mission-------------------- */
+.our_mission{
+    position: relative;
+    background-image: url(../images/about_our_mission_bg_2.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    
+}
+.our_mission::before{
+    position: absolute;
+    content: '';
+    background-color: #01005aed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.our_mission  .col-md-4{
+    position: relative;
+    z-index: 9;
+    margin: 2rem 0 ;
+}
+.our_mission .box{
+    background-color: wheat;
+    color: #100e37;
+    z-index: 1;
+    padding: 0.5rem;
+    position: relative;
+    width: auto;
+    max-height:400px ;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px solid;
+    font-weight: 600;
+
+}
+.our_mission .box::after{
+    position: absolute;
+    content: '';
+    background-image: url(../images/about_our_mission_bg_2.jpg);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0.2;
+    left: 0;
+}
+.our_mission .box .logo{
+    width: 70px;
+    aspect-ratio: 2;
+    padding: 0.3rem;
+}
+.our_mission .box .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+/* -------------------about-testimonial------------ */
+.testi_monial{
+    position: relative;
+    padding: 2rem 0;
+    background-image: url(../images/people.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.testi_monial::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background-image: linear-gradient(to right, #6b6dd1, #8472d7, #9c76dc, #b27ae1, #c87fe4, #df7ed8, #f17ecb, #ff81be, #ff879f, #ff9782, #ffad6a, #fbc45f);
+}
+.testi_monial .header{
+    color: #100e37;
+    z-index: 1;
+    position: relative;
+}
+.testi_monial .testimonial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2rem 0;
+}
+.testi_monial .owl_testimonial .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    padding: 1rem 0;
+
+}
+.testi_monial .owl_testimonial .card .stars{
+    color: gold;
+}
+.testi_monial .owl_testimonial .card p span{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.testi_monial .owl_testimonial .card .logo{
+    width: 60px;
+    aspect-ratio: 2;
+}
+.testi_monial .owl_testimonial .card .logo img{
+    width: 100%;
+    height: 100%;
+}
+.testi_monial .owl_testimonial .slick-dots{
+    display: flex;
+}
