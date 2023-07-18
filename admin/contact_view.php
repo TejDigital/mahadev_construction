@@ -7,7 +7,7 @@ require('config/dbcon.php');
 
 $ids = $_GET['cus_id'];
 
-$sql = "SELECT * from  contact_tbl where id ='$ids'";
+$sql = "SELECT * from  contact_tbl where contact_id ='$ids'";
 
 $result = mysqli_query($con, $sql);
 
@@ -36,16 +36,16 @@ $data1 = mysqli_fetch_assoc($result);
                                 </div>
                                 <!-- <div class="col-md-3">
                                 <label for="">Phone</label>
-                                    <h6><?php echo $data1['number'] ?></h6>
+                                    <h6><?php echo $data1['phone'] ?></h6>
                                 </div> -->
                                 <div class="col-md-4">
                                 <label for="">Email</label>
                                     <h6><?php echo $data1['email'] ?></h6>
                                 </div>
-                                <div class="col-md-4">
+                                <!-- <div class="col-md-4">
                                 <label for="">Subject</label>
                                     <h6><?php echo $data1['subject'] ?></h6>
-                                </div>
+                                </div> -->
                                 <div class="col-md-12">
                                     <label for="">Messages</label>
                                     <h6><?php echo $data1['messages'] ?></h6>

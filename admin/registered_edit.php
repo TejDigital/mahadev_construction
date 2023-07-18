@@ -35,12 +35,12 @@ require('config/dbcon.php');
                             <?php
                             if (isset($_GET['user_id'])) {
                                 $user_id = $_GET['user_id'];
-                                $query = "SELECT * FROM users WHERE id ='$user_id'LIMIT 1";
+                                $query = "SELECT * FROM users_tbl WHERE user_id ='$user_id'LIMIT 1";
                                 $qurey_run = mysqli_query($con, $query);
                                 if (mysqli_num_rows($qurey_run) > 0) {
                                     foreach ($qurey_run as $row) {
                             ?>
-                                        <input type="hidden" name="user_id" value=" <?php echo $row['id'] ?>">
+                                        <input type="hidden" name="user_id" value=" <?php echo $row['user_id'] ?>">
                                         <div class="form-group">
                                             <label for="">Name</label>
                                             <input type="text" name="name" value="<?php echo $row['name'] ?>" class="form-control" placeholder="name">
@@ -51,11 +51,11 @@ require('config/dbcon.php');
                                         </div>
                                         <div class="form-group">
                                             <label for="">Password</label>
-                                            <input type="password" name="password" value="<?php echo $row['password'] ?>" class="form-control" placeholder="password">
+                                            <input type="text" name="password" value="<?php echo $row['password'] ?>" class="form-control" placeholder="password">
                                         </div>
                                         <div class="form-group">
                                             <label for="">Give role</label>
-                                            <select name="status" class="form-control" disabled>
+                                            <select name="_user_status" class="form-control" disabled>
                                                 <option value="">select</option>
                                                 <option value="0">User</option>
                                                 <option value="1">Admin</option>

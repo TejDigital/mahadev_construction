@@ -3,7 +3,7 @@
 $localhost = "localhost";
 $username ="root";
 $password ="";
-$db_name="fire_db";
+$db_name="construction_db";
 
 $con = mysqli_connect($localhost,$username,$password,$db_name);
 

@@ -1,31 +1,157 @@
 /* -----------------------project_details----------------- */
-.project_details{
+.project_details {
     position: relative;
 }
-.project_details .img{
+
+.project_details .img {
     width: 100%;
     max-height: 400px;
-    height: 100%;
+    /* height: 100%; */
     /* display: flex;
     align-items: center;
     justify-content: center; */
     position: relative;
 }
-.project_details .img img{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+
+.project_details .img img {
+    width: 100%;
+    max-height: 400px;
+    /* height: 100%; */
+    object-fit: cover;
     object-position: center;
 }
-/* ----------------------contact_slide_panel_-------- */
-.project_details .contact_slide_panel{
-    position: relative;
-    margin-top:3rem;
+@media(max-width:720){
+    .project_details .img {
+        width: 100%;
+        max-height: 400px;
+        height: 100%;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        position: relative;
+    }
+    
+    .project_details .img img {
+        width: 100%;
+        /* max-height: 400px; */
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
 }
-.project_details .contact_slide_panel form{
-    padding: 1rem ;
-    background-color: rgb(255, 253, 253);
+
+/* ----------------------contact_slide_panel_-------- */
+.project_details .services_des {
+    position: relative;
+
+}
+.project_details .services_des h1{
+    font-weight: 700;
+    border-bottom:4px solid #f9c108 ;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+.project_details .services_des .text{
+    margin: 2rem 0;
+}
+.project_details .services_des .text h4{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.project_details .services_des .text h4 span{
+    color: #f9c108;
+}
+
+
+
+
+
+.project_details .contact_slide_panel {
+    position: relative;
+    margin-top: 5rem;
+}
+
+.project_details .contact_slide_panel form {
+    padding: 1rem;
+    background-color: rgb(231, 231, 231);
     border-radius: 5px;
     color: black;
-    border: 2px solid #000;
+    margin: 0 1rem;
+    /* border: 2px solid #000; */
+    box-shadow: 3px 3px 5px rgb(163, 163, 163);
+}
+
+.contact_slide_panel form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(138, 138, 138);
+}
+.contact_slide_panel form button{
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    background-color: #f9c108;
+    font-weight: 600;
+    border: 2px  solid transparent;
+    outline: none;
+}
+.contact_slide_panel form input:focus{
+    border-bottom: 2px solid black;
+    outline: transparent;
+}
+.contact_slide_panel form button:hover{
+    border: 2px solid #f9c108;
+    background-color: transparent;
+    color: #f9c108;
+}
+.contact_slide_panel form h4 {
+    font-size: 1.1rem;
+}
+
+.contact_slide_panel .our_projects{
+    margin-top: 1rem;
+
+}
+.contact_slide_panel .our_projects h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(154, 154, 154);
+}
+
+.contact_slide_panel .our_projects .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(233, 233, 233);
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem ;
+    margin-bottom: 1rem;
+}
+
+.contact_slide_panel .our_projects .box .img_list {
+    height: auto;
+    max-width: 600px;
+    position: relative;
+}
+
+.contact_slide_panel .our_projects .box .img_list img {
+    padding: 1rem 0;
+    border-radius: 3px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    /* top: 0;
+    left: 0;
+    position: absolute; */
+}
+
+.contact_slide_panel .our_projects .box .text h5 {
+    font-size: 0.7rem;
+}
+
+.contact_slide_panel .our_projects .box .text p {
+    font-size: 0.6rem;
 }

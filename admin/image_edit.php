@@ -23,9 +23,9 @@ require('config/dbcon.php');
         </div>
     </div>
     <?php
-    if (isset($_SESSION['fire_msg'])) {
-        echo "<script>alert('.$_SESSION[fire_msg] .')</script>";
-        unset($_SESSION['fire_msg']);
+    if (isset($_SESSION['cons_msg'])) {
+        echo "<script>alert('.$_SESSION[cons_msg] .')</script>";
+        unset($_SESSION['cons_msg']);
     }
     ?>
     <div class="card">
@@ -41,21 +41,21 @@ require('config/dbcon.php');
                             <?php
                             if (isset($_GET['img_id'])) {
                                 $img_id = $_GET['img_id'];
-                                $query = "SELECT * FROM img_tbl WHERE id ='$img_id'LIMIT 1";
+                                $query = "SELECT * FROM gallery_tbl WHERE gall_id ='$img_id'LIMIT 1";
                                 $qurey_run = mysqli_query($con, $query);
                                 if (mysqli_num_rows($qurey_run) > 0) {
                                     foreach ($qurey_run as $row) {
                             ?>
-                                        <input type="hidden" name="id" value=" <?php echo $row['id'] ?>">
+                                        <input type="hidden" name="id" value=" <?php echo $row['gall_id'] ?>">
                                         <div class="form-group">
                                             <label for="">Image</label>
-                                            <img src="admin_img_upload/<?php echo $row['img_name'] ?>" alt="" width="200px" height="200px">
+                                            <img src="admin_img_upload/<?php echo $row['image_name'] ?>" alt="" width="200px" height="200px">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="">New Image</label>
                                             <input type="file" name="new_img" class="form-control">
-                                            <input type="hidden" name="img_old" value="<?= $row['img_name']?>">
+                                            <input type="hidden" name="img_old" value="<?= $row['image_name']?>">
                                         </div>
                                         <div class="form-group">
                                             <label for="">Status</label>

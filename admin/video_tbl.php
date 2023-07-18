@@ -118,9 +118,9 @@ require('config/dbcon.php');
         <div class="col-md-12">
             <div class="card">
                 <?php
-                if (isset($_SESSION['fire_msg'])) {
-                    echo "<script>alert('.$_SESSION[fire_msg] .')</script>";
-                    unset($_SESSION['fire_msg']);
+                if (isset($_SESSION['cons_msg'])) {
+                    echo "<script>alert('.$_SESSION[cons_msg] .')</script>";
+                    unset($_SESSION['cons_msg']);
                 }
                 ?>
                 <div class="card-header">

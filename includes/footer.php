@@ -59,11 +59,12 @@
                          <a href="services.php" class="">Services</a>
                      </p>
                      <p class="footer_link">
-                         <a href="gallery.php" class="">Gallery</a>
+                         <a href="contact.php" class="">Contact</a>
                      </p>
                      <p class="footer_link">
-                         <a href="#!" class="">Contact</a>
+                         <a href="gallery.php" class="">Gallery</a>
                      </p>
+                    
                  </div>
                  <!-- Grid column -->
                  <!-- Grid column -->
@@ -109,7 +110,7 @@
                      
                      <p class="address"><a href="tel:8770092366"><i class="fas fa-phone me-3 "></i>+918770092366</a></p> -->
                      <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-2 contact_icons">
                         <i class="fas fa-home me-3 mb-5"></i>
                         <i class="fas fa-envelope me-3 mt-5 mb-4"></i>
                         <i class="fas fa-phone me-3 mb-3"></i>
@@ -119,7 +120,7 @@
                         <p class="address"> 
                       <a href="#!" class="text-justify">
                          <span> 
-                            <span style="color: #fff; font-weight:700">Official Address:</span> St-2, Pushpak <br> Nagar, Bhilai, Chhattisgarh - 490020 </span>
+                            <span style="color: #fff; font-weight:700">Official Address:</span> <br> St-2, Pushpak <br> Nagar, Bhilai, Chhattisgarh - 490020 </span>
                     </a></p>
                      
                      <p class="address">info@example.com</p>
@@ -131,18 +132,18 @@
                      </div>
                  </div>
                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 footer_column">
-                     <h6 class="text-uppercase fw-bold mb-4">Social links</h6>
                      <div class="footer_social_links ">
-                         <a href="" class="me-4 mb-4 link-secondary">
+                         <h6 class="text-uppercase fw-bold mb-4 ">Social links</h6>
+                         <a href="" class=" mb-4 link-secondary">
                              <i class="fab fa-facebook"></i>
                          </a>
-                         <a href="" class="me-4 mb-4 link-secondary">
+                         <a href="" class=" mb-4 link-secondary">
                              <i class="fab fa-instagram"></i>
                          </a>
-                         <a href="" class="me-4 mb-4 link-secondary">
+                         <a href="" class=" mb-4 link-secondary">
                              <i class="fab fa-linkedin"></i>
                          </a>
-                         <a href="" class="me-4 mb-4 link-secondary">
+                         <a href="" class=" mb-4 link-secondary">
                              <i class="fab fa-youtube"></i>
                          </a>
                      </div>

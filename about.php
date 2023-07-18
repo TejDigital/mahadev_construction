@@ -38,14 +38,14 @@ require('includes/header.php');
                         Authority) certification.Our RERA registration number is PCGRERA070723001648. With over
                         22 years of experience, we have honed our skills and resources to deliver outstanding results for
                         both residential and commercial projects.</p>
-                    <div class="about_points d-flex flex-column gap-4">
+                    <!-- <div class="about_points d-flex flex-column gap-4">
                         <span class="d-flex align-items-center"><i class="fa-solid fa-square-check me-2"></i><b>Lorem, ipsum.fffdfd</b></span>
                         <span class="d-flex align-items-center"><i class="fa-solid fa-square-check me-2"></i><b>Lorem, ipsum.fffdfd</b></span>
                         <span class="d-flex align-items-center"><i class="fa-solid fa-square-check me-2"></i><b>Lorem, ipsum.fffdfd</b></span>
                         <span class="d-flex align-items-center"><i class="fa-solid fa-square-check me-2"></i><b>Lorem, ipsum.fffdfd</b></span>
                         <span class="d-flex align-items-center"><i class="fa-solid fa-square-check me-2"></i><b>Lorem, ipsum.fffdfd</b></span>
                         <span class="d-flex align-items-center"><i class="fa-solid fa-square-check me-2"></i><b>Lorem, ipsum.fffdfd</b></span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@ require('includes/header.php');
                                 <img src="images/mission.png" alt="">
                             </div>
                             <h4>Our Mission</h4>
-                            <p class="text-center">At Mahadev Developers, our mission is to create exceptional spaces that enrich lives and
+                            <p class="">At Mahadev Developers, our mission is to create exceptional spaces that enrich lives and
                                 communities. We are committed to delivering high-quality real estate projects, providing
                                 innovative solutions, and fostering long-lasting relationships with our clients, employees, and
                                 partners.</p>
@@ -74,7 +74,7 @@ require('includes/header.php');
                                 <img src="images/vision.png" alt="">
                             </div>
                             <h4>Our Vision</h4>
-                            <p class="text-center">Our vision is to become a top player in the real estate industry, renowned for our unwavering dedication to quality, integrity, and customer contentment. We seek to revolutionize urban environments by crafting sustainable, practical, and visually appealing spaces that elevate individuals' well-being and contribute to societal progress.</p>
+                            <p class="">Our vision is to become a top player in the real estate industry, renowned for our unwavering dedication to quality, integrity, and customer contentment. We seek to revolutionize urban environments by crafting sustainable, practical, and visually appealing spaces that elevate individuals' well-being and contribute to societal progress.</p>
                         </div>
                     </div>
                     <div class="col-md-4 p-3">
@@ -83,7 +83,7 @@ require('includes/header.php');
                                 <img src="images/value.png" alt="">
                             </div>
                             <h4>Our Value</h4>
-                            <p class="text-center">Dreaming, creating, designing, and building the most wonderful place in the world is an awe-inspiring endeavor. However, the realization of such a vision necessitates the invaluable contribution of people. People are the heart and soul of any project, infusing it with their expertise, passion, and dedication.</p>
+                            <p class="">Dreaming, creating, designing, and building the most wonderful place in the world is an awe-inspiring endeavor. However, the realization of such a vision necessitates the invaluable contribution of people. People are the heart and soul of any project, infusing it with their expertise, passion, and dedication.</p>
                         </div>
                     </div>
                 </div>

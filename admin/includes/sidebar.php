@@ -2,7 +2,7 @@
     <!-- Brand Logo -->
     <a href="../admin/index.php" class="brand-link">
         <!-- <img src="assets/dist/img/AdminLTELogo.png" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
-        <span class="brand-text " style="font: size 1.5em; font-weight: 700;">Fire Safety</span>
+        <span class="brand-text " style="font: size 1.5em; font-weight: 700;">Mahaved Developer's</span>
     </a>
 
     <!-- Sidebar -->
@@ -50,19 +50,19 @@
                 <li class="pl-2 ml-2 ">
                     <div class="dropdown">
                         <button class="w-100 btn btn-secondary dropdown-toggle mb-2" style="text-align: start;" type="button" id="blog_des" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Blog
+                            Projects
                         </button>
                         <div class="dropdown-menu pl-3" aria-labelledby="blog_des">
                             <a href="add_blog.php">
-                                <p class="text-dark">Add Blog</p>
+                                <p class="text-dark">Add Projects</p>
                             </a>
                             <a href="blog_des.php">
-                                <p class="text-dark"> All Blog </p>
+                                <p class="text-dark"> All Projects </p>
                             </a>
 
-                            <a href="category.php">
+                            <!-- <a href="category.php">
                                 <p class="text-dark"> Categories </p>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </li>
@@ -72,10 +72,10 @@
                             Gallery
                         </button>
                         <div class="dropdown-menu pl-3" aria-labelledby="blog_des">
-                            <a href="video_tbl.php">
+                            <!-- <a href="video_tbl.php">
                                 <p class="text-dark">Videos</p>
-                            </a>
-                            <a href="images_tbl.php">
+                            </a> -->
+                            <a href="gallery.php">
                                 <p class="text-dark">Image Upload</p>
                             </a>
                         </div>

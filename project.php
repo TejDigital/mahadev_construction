@@ -7,8 +7,8 @@ require('includes/header.php');
             <div class="row d-flex justify-content-center">
                 <div class="col-md-12">
                     <div class="banner-con text-center">
-                        <h1>Project</h1>
-                        <p class="text-justify"> <a href="index.php" class="me-2">Home</a><i class="fa-solid fa-forward"></i><span>Project</span></p>
+                        <h1>Projects</h1>
+                        <p class="text-justify"> <a href="index.php" class="me-2">Home</a><i class="fa-solid fa-forward"></i><span>Projects</span></p>
                     </div>
                 </div>
             </div>
@@ -18,7 +18,7 @@ require('includes/header.php');
 <section class="project_start">
     <div class="container">
         <div class="row p-0 m-0">
-            <h1 class="text-center">Our Project</h1>
+            <h1 class="text-center">Our Projects</h1>
             <div class="col-md-6 py-2 px-4">
                 <div class="img">
                     <img src="images/home_bg_3.jpg" alt="">
@@ -55,7 +55,7 @@ require('includes/header.php');
                         <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sapiente hic, ipsa placeat aliquam reprehenderit!...</p>
                     </div>
                     <div class="detail_btn">
-                        <a href="#!">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="project_detail.php">Read More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

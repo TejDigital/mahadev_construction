@@ -32,15 +32,15 @@ require('includes/header.php');
 <section class="services_start">
     <div class="container-fluid">
         <div class="row p-0 m-0">
-            <div class="col-lg-12">
-                <div class="row p-0 m-0">
+            <div class="col-lg-12 parent_services_box">
+                <div class="row p-0 m-0 services_box">
                     <div class="col-md-6">
                         <div class="img">
-                            <img src="images/home_bg_1.jpg" alt="">
+                            <img src="images/plotting.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-md-6 text">
-                        <h4>1 Plotting</h4>
+                        <h4><span>1.</span> Plotting</h4>
                          <p class="text-justify">Are you in search of the perfect plot of land to bring your vision to life? Look no further than
                             Mahadev Developers. With our extensive experience in the real estate industry, we understand
                             the significance of location when it comes to your project's success. Our qualified team of
@@ -58,9 +58,9 @@ require('includes/header.php');
 
                     </div>
                 </div>
-                <div class="row p-0 m-0">
+                <div class="row p-0 m-0 services_box">
                     <div class="col-md-6 text">
-                        <h4>2. Planning & Designing: </h4>
+                        <h4><span>2.</span> Planning & Designing: </h4>
                          <p class="text-justify">At Mahadev Developers, we understand that every building should be an embodiment of your
                             unique vision and requirements. Our planning and designing services are focused on working
                             closely with you to bring your ideas to life. From the initial concept to the final design, our team
@@ -77,18 +77,18 @@ require('includes/header.php');
                     </div>
                     <div class="col-md-6">
                         <div class="img">
-                            <img src="images/home_bg_2.jpg" alt="">
+                            <img src="images/planing.jpg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="row p-0 m-0">
+                <div class="row p-0 m-0 services_box">
                     <div class="col-md-6">
                         <div class="img">
-                            <img src="images/home_bg_3.jpg" alt="">
+                            <img src="images/construction.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-md-6 text">
-                        <h4>3 Construction</h4>
+                        <h4><span>3.</span> Construction</h4>
                          <p class="text-justify">When it comes to construction, Mahadev Developers is synonymous with quality, reliability, and
                             excellence. With a track record of successful projects spanning over two decades, we have
                             earned a reputation as industry leaders in construction services. Our team of highly skilled
@@ -106,9 +106,9 @@ require('includes/header.php');
                             integrity</p>
                     </div>
                 </div>
-                <div class="row p-0 m-0">
+                <div class="row p-0 m-0 services_box">
                     <div class="col-md-6 text">
-                        <h4>4 Investment Consultant </h4>
+                        <h4><span>4.</span>Investment Consultant </h4>
                          <p class="text-justify">Investing in real estate can be a lucrative venture, but it requires careful planning and expert
                             guidance. At Mahadev Developers, we go beyond our core services to provide investment
                             consulting to help you make informed decisions. Our team of experienced professionals
@@ -126,18 +126,18 @@ require('includes/header.php');
                     </div>
                     <div class="col-md-6">
                         <div class="img">
-                            <img src="images/home_bg_2.jpg" alt="">
+                            <img src="images/investment.jpg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="row p-0 m-0">
+                <div class="row p-0 m-0 services_box">
                     <div class="col-md-6">
                         <div class="img">
-                            <img src="images/home_bg_4.jpg" alt="">
+                            <img src="images/financial.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-md-6 text">
-                        <h4>5 Financial Assistance</h4>
+                        <h4><span>5.</span> Financial Assistance</h4>
                          <p class="text-justify">Securing the necessary financing for your real estate project can be a challenging task. At
                             Mahadev Developers, we understand the importance of financial support and have established
                             strong partnerships with trusted finance institutions to offer tailored financial assistance.

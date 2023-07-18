@@ -96,9 +96,9 @@ require('config/dbcon.php');
         <div class="row">
             <div class="col-md-12">
                 <?php
-                if (isset($_SESSION['cm_msg'])) {
-                    echo "<script>alert(' .$_SESSION[cm_msg] .')</script>";
-                    unset($_SESSION['cm_msg']);
+                if (isset($_SESSION['cons_msg'])) {
+                    echo "<script>alert(' .$_SESSION[cons_msg] .')</script>";
+                    unset($_SESSION['cons_msg']);
                 }
                 ?>
                 <div class="card">
@@ -120,21 +120,21 @@ require('config/dbcon.php');
                             </thead>
                             <tbody>
                                 <?php
-                                $query = "SELECT * FROM users";
+                                $query = "SELECT * FROM users_tbl";
                                 $db_query_connect = mysqli_query($con, $query);
                                 if (mysqli_num_rows($db_query_connect) > 0) {
                                     foreach ($db_query_connect as $row) {
                                         ?>
                                          <tr>
-                                                <td><?php echo $row['id'];  ?></td>
+                                                <td><?php echo $row['user_id'];  ?></td>
                                                 <td><?php echo $row['name']; ?></td>
                                                 <td><?php echo $row['email']; ?></td>
                                                 <td>
                                                     <?php
-                                                        if($row['status'] == "0"){
+                                                        if($row['user_status'] == "0"){
                                                             echo"User";
                                                         }
-                                                        elseif($row['status'] == "1"){
+                                                        elseif($row['user_status'] == "1"){
                                                             echo"Admin";
                                                         }
                                                         else{
@@ -144,8 +144,8 @@ require('config/dbcon.php');
                                                 </td>
                                                 
                                                 <td>
-                                                    <a href=registered_edit.php?user_id=<?php echo$row['id'];?> class='btn btn-info btn-sm'> Edit</a>
-                                                    <!-- <button type='button' value=<?php echo$row['id'];?> class='btn btn-danger deletebtn btn-sm'>Delete</button> -->
+                                                    <a href=registered_edit.php?user_id=<?php echo$row['user_id'];?> class='btn btn-info btn-sm'> Edit</a>
+                                                    <!-- <button type='button' value=<?php echo$row['user_id'];?> class='btn btn-danger deletebtn btn-sm'>Delete</button> -->
                                                 </td>
 
                                           </tr>

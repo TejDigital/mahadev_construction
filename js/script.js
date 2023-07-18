@@ -106,10 +106,25 @@ $(".slider-nav").slick({
   infinite: true,
   autoplay:true,
   autoplaySpeed: 2000,
-  slidesToScroll: 5,
+  slidesToScroll: 4,
   dots: true,
   arrows: true,
   asNavFor: ".slider-single",
   focusOnSelect: true,
   centerMode: true,
 });
+
+
+// ----------------number_validation-----------------------
+function validateNumber(elem, alertId) {
+  if (isNaN(elem.value)) {
+    document.getElementById(alertId).innerHTML = " * Enter Only Number";
+  } else {
+    document.getElementById(alertId).innerHTML = "";
+
+    if (elem.value.length  > 10 || elem.value.length  < 10 ) {
+      document.getElementById(alertId).innerHTML = "* Enter Only 10 digits";
+    }
+   
+  }
+}

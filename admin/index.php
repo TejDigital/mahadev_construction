@@ -55,7 +55,7 @@ require('config/dbcon.php');
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Delete Category</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Delete Message</h5>
                     <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -80,9 +80,9 @@ require('config/dbcon.php');
                 <div class="col-md-12">
                     <div class="card">
                         <?php
-                        if (isset($_SESSION['fire_msg'])) {
-                            echo "<script>alert('.$_SESSION[fire_msg] .')</script>";
-                            unset($_SESSION['fire_msg']);
+                        if (isset($_SESSION['cons_msg'])) {
+                            echo "<script>alert('.$_SESSION[cons_msg] .')</script>";
+                            unset($_SESSION['cons_msg']);
                         }
                         ?>
                         <div class="card-header">
@@ -107,13 +107,13 @@ require('config/dbcon.php');
                                         foreach ($query as $data) {
                                     ?>
                                             <tr>
-                                                <td><?= $data['id'] ?></td>
+                                                <td><?= $data['contact_id'] ?></td>
                                                 <td><?= $data['name'] ?></td>
                                                 <td><?= $data['email'] ?></td>
 
-                                                <td><a href="contact_view.php?cus_id=<?= $data['id'] ?>" class="btn btn-info btn-sm">View</a></td>
-                                                <td><a href="contact_edit.php?cus_id=<?= $data['id'] ?>" class="btn btn-primary btn-sm">Edit</a></td>
-                                                <td><button type='button' value=<?php echo $data['id']; ?> class='btn btn-danger delete_msg btn-sm'>Delete</button></td>
+                                                <td class="text-center"><a href="contact_view.php?cus_id=<?= $data['contact_id'] ?>" class="btn btn-info btn-sm">View</a></td>
+                                                <!-- <td><a href="contact_edit.php?cus_id=<?= $data['contact_id'] ?>" class="btn btn-primary btn-sm">Edit</a></td> -->
+                                                <td class="text-center"><button type='button' value=<?php echo $data['contact_id']; ?> class='btn btn-danger delete_msg btn-sm'>Delete</button></td>
                                             </tr>
                                     <?php
                                         }

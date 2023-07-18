@@ -80,9 +80,9 @@ require('config/dbcon.php');
                 <div class="col-md-12">
                     <div class="card">
                         <?php
-                        if (isset($_SESSION['fire_msg'])) {
-                            echo "<script>alert('.$_SESSION[fire_msg] .')</script>";
-                            unset($_SESSION['fire_msg']);
+                        if (isset($_SESSION['cons_msg'])) {
+                            echo "<script>alert('.$_SESSION[cons_msg] .')</script>";
+                            unset($_SESSION['cons_msg']);
                         }
                         ?>
                         <div class="card-header">
@@ -93,21 +93,21 @@ require('config/dbcon.php');
                             <?php
                             if(isset($_GET['cus_id'])){
                             $id = $_GET['cus_id'];
-                            $sql = "SELECT * FROM contact_tbl WHERE id='$id'";
+                            $sql = "SELECT * FROM contact_tbl WHERE contact_id='$id'";
                             $query = mysqli_query($con,$sql);
                             $row = mysqli_fetch_assoc($query);
                             ?>
                                         <div class="row">
                                             <div class="col-md-12 col-sm-12 col-lg-12">
-                                                <input type="hidden" name="cus_id" value="<?= $row['id']?>">
+                                                <input type="hidden" name="cus_id" value="<?= $row['contact_id']?>">
                                                 <input name="name" class="form-control mb-1" value="<?=$row['name']?>"  type="text" placeholder="Your Name...">
                                             </div>
                                             <div class="col-md-12 col-sm-12 col-lg-12">
                                                 <input name="email" class="form-control mb-1" value="<?=$row['email']?>"  type="email" placeholder="Email Address">
                                             </div>
-                                            <div class="col-md-12 col-sm-12 col-lg-12">
+                                            <!-- <div class="col-md-12 col-sm-12 col-lg-12">
                                                 <input name="subject" class="form-control mb-1" value="<?=$row['subject']?>" type="text" placeholder="Add Subject Here..." readonly>
-                                            </div>
+                                            </div> -->
                                             <div class="col-md-12 col-sm-12 col-lg-12">
                                                 <textarea name="message" class="form-control mb-1" placeholder="Your Message Goes Here"><?=$row['messages']?></textarea>
                                             </div>
